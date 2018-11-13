@@ -22,7 +22,7 @@ function getEnrolmentBox(result) {
   '<br>' +
   '<span class="card-pf-utilization-card-details-line-2"><b>Date of Birth :</b><font color ="#FF9933"> ' + result[0].dob + '</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Medicial Conditions:</b><font color ="#FF9933"> ' + result[0].medicalCondition + '</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Medical Conditions:</b><font color ="#FF9933"> ' + result[0].medicalCondition + '</font></span>' +
   '</span>' +
   '<br>' +
   '<span class="card-pf-utilization-card-details-line-2"><b>Blood Type:</b><font color ="#FF9933"> ' + result[0].bloodType + '</font></span>' +
@@ -30,6 +30,16 @@ function getEnrolmentBox(result) {
   '<span class="card-pf-utilization-card-details-line-2"><b>Immunization:</b><font color ="#FF9933"> ' + result[0].immunization + '</font></span>' +
   '<br>' +
   '<span class="card-pf-utilization-card-details-line-2"><b>Allergies:</b><font color ="#FF9933"> ' + result[0].allergies + '</font></span>' +
+  '<br>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Emergency Contact Name:</b><font color ="#FF9933"> Danial Gunawan</font></span>' +
+  '<br>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Emergency Contact Number:</b><font color ="#FF9933"> +65 1234 5678</font></span>' +
+  '<br>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Bank Name:</b><font color ="#FF9933"> Singapore State Bank</font></span>' +
+  '<br>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Bank Account Number:</b><font color ="#FF9933"> 027-20485-20485</font></span>' +
+  '<br>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Account Balance:</b><font color ="#FF9933"> 8000</font></span>' +
   '<br>' +
 
   '<span class="card-pf-utilization-card-details-line-2">' + '</span>' +
@@ -57,7 +67,11 @@ function getHospitalBox(result) {
 
   '<span class="card-pf-utilization-card-details-line-2"><b>Full Name:</b><font color ="#FF9933"> ' +result[0].firstName +" "+ result[0].lastName + ' </font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Medicial Conditions:</b><font color ="#FF9933"> ' + result[0].medicalCondition + '</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Country:</b><font color ="#FF9933"> ' + result[0].country +'</font></span>' +
+  '<br>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Date of Birth :</b><font color ="#FF9933"> ' + result[0].dob + '</font></span>' +
+  '<br>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Medical Conditions:</b><font color ="#FF9933"> ' + result[0].medicalCondition + '</font></span>' +
   '</span>' +
   '<br>' +
   '<span id="bloodType3" class="card-pf-utilization-card-details-line-2"><b>Blood Type:</b><font color ="#FF9933"> ' + result[0].bloodType + '</font></span>' +
@@ -66,6 +80,10 @@ function getHospitalBox(result) {
   '<br>' +
   '</span>' +
   '<span id="allergies3" class="card-pf-utilization-card-details-line-2"><b>Allergies:</b><font color ="#FF9933"> ' + result[0].allergies + '</font></span>' +
+  '<br>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Emergency Contact Name:</b><font color ="#FF9933"> Danial Gunawan</font></span>' +
+  '<br>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Emergency Contact Number:</b><font color ="#FF9933"> +65 1234 5678</font></span>' +
   '<br>' +
   '<span class="card-pf-utilization-card-details-line-2">' + '</span>' +
   '</span>' +
