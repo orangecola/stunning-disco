@@ -1,0 +1,30 @@
+version: '3'
+services:
+  dashboard:
+    build:
+      context: ./dashboard
+      args:
+       - SERVERIP=$SERVERIP
+    ports:
+     - "5001:5001"
+  enrolment:
+    build:
+      context: ./Enrolment
+      args:
+       - SERVERIP=$SERVERIP
+    ports:
+     - "5000:5000"
+  hospital:
+    build:
+      context: ./hospital
+      args:
+       - SERVERIP=$SERVERIP
+    ports:
+     - "5002:5002"
+  #bank:
+  #  build:
+  #    context: ./bank
+  #    args:
+  #     - SERVERIP=$SERVERIP
+  #  ports:
+  #   - "5003:5003"

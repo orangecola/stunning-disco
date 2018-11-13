@@ -1,0 +1,178 @@
+<html>
+<head>
+  <title>Dashboard</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.17.0/js/patternfly.js"></script>
+  <script src="{{url_for('static', filename='server.js')}}"></script>
+  <script src="{{url_for('static', filename='myfunction.js')}}"></script>
+  <script src="{{url_for('static', filename='sha256.js')}}"></script>
+
+
+
+
+
+  <!-- <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> -->
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.17.0/css/patternfly.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.17.0/css/patternfly-additions.min.css" rel="stylesheet">
+  <link href="https://rawgit.com/oVirt/ovirt-engine-dashboard/ovirt-engine-dashboard-1.1/static/css/angular-app.css" rel="stylesheet">
+  <link href="https://rawgit.com/oVirt/ovirt-engine-dashboard/ovirt-engine-dashboard-1.1/static/css/dashboard.css" rel="stylesheet">
+
+<style>
+.blockHash {
+    width: 250px;
+    word-wrap: break-word;
+}
+</style>
+
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="container-fluid container-tiles-pf containers-dashboard">
+
+      <!-- Last Updated -->
+      <div class="row row-tile-pf">
+        <h1 style="margin-left: 10px; margin-top: 10px;"><span><span class="fa fa-clock-o"></span>
+          <!-- react-text: 9 -->
+          <!-- /react-text --><b> Blockchain Dashboard
+          <!-- react-text: 11 -->
+          <!-- /react-text -->
+          <!-- react-text: 12 -->
+          <!-- /react-text -->
+        </span>
+      </h1>
+    </div>
+
+    <!-- Aggregate Status Cards -->
+    <div class="row row-tile-pf">
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <div class="card-pf card-pf-aggregate-status card-pf-accented">
+         <p class="card-pf-aggregate-status-notifications"><span class="card-pf-aggregate-status-notification"><a href="#" data-original-title="" title="">
+          <!-- <span class="pficon pficon-warning-triangle-o"></span> -->
+          <!-- react-text: 27 -->
+          <span id="icaLogo" >
+
+            <img src="static/liquid.png" class="img" id="enrolmentimg" width="100" height="100" style="margin-top: 2px;">
+          </span>
+          <!-- /react-text -->
+        </a>
+      </span>
+    </p>
+    <h1 class="card-pf-title"><span class="fa fa-building-o"></span><span class="card-pf-aggregate-status-count"></span><!-- react-text: 20 --> <!-- /react-text --><span class="card-pf-aggregate-status-title">South Beach Enrollment Center</span></h1>
+    <div class="card-pf-body">
+
+    </div>
+  </div>
+</div>
+
+
+<div class="col-xs-4 col-sm-4 col-md-4">
+  <div class="card-pf card-pf-aggregate-status card-pf-accented">
+   <p class="card-pf-aggregate-status-notifications"><span class="card-pf-aggregate-status-notification"><a href="#" data-original-title="" title="">
+    <!-- <span class="pficon pficon-warning-triangle-o"></span> -->
+    <!-- react-text: 27 -->
+    <span id="bankLogo">
+      <img src="static/hospital.png" class="img" id="hospitalimg" width="100" height="100" style="margin-top: 2px;">
+    </span>
+    <!-- /react-text -->
+  </a>
+</span>
+</p>
+<h1 class="card-pf-title"><span class="fa fa-building-o"></span><span class="card-pf-aggregate-status-count"></span><!-- react-text: 20 --> <!-- /react-text --><span class="card-pf-aggregate-status-title">Tom Yum Hospital</span></h1>
+<div class="card-pf-body">
+
+</div>
+</div>
+</div>
+
+<div class="col-xs-4 col-sm-4 col-md-4">
+  <div class="card-pf card-pf-aggregate-status card-pf-accented">
+   <p class="card-pf-aggregate-status-notifications"><span class="card-pf-aggregate-status-notification"><a href="#" data-original-title="" title="">
+    <!-- <span class="pficon pficon-warning-triangle-o"></span> -->
+    <!-- react-text: 27 -->
+    <span id="bankLogo">
+      <img src="static/bank.png" id="bankimg" width="100" height="100" style="margin-top: 2px;">
+    </span>
+    <!-- /react-text -->
+  </a>
+</span>
+</p>
+<h1 class="card-pf-title"><span class="fa fa-building-o"></span><span class="card-pf-aggregate-status-count"></span><!-- react-text: 20 --> <!-- /react-text --><span class="card-pf-aggregate-status-title">Shark Bank</span></h1>
+<div class="card-pf-body">
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- Cluster Utilization place holder -->
+<div class="row row-tile-pf">
+  <div class="col-md-12">
+
+    <!-- <div class="row">
+      <div class="col">
+        <div class="card-pf">
+          <div class="card-pf-heading">
+            <p class="card-pf-heading-details">Showing: All</p>
+            <h2 class="card-pf-title">
+              Blockchain updates
+              <br>
+              Count: <span id="myspan"></span>
+            </h2>
+          </div>
+          <div class="card-pf-body" id="box">
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="card-pf" style="padding: 30px;">
+
+          <div class="card-pf-body" id="box">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-4">
+       <div class="card-pf" style="padding: 30px;">
+
+        <div class="card-pf-body" id="box2">
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4">
+     <div class="card-pf" style="padding: 30px;">
+
+      <div class="card-pf-body" id="box3">
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+<audio class="audios" id="speech" preload="auto">
+   <source src="static/speech.mp3" type="audio/mpeg">
+</audio>
+<audio class="audios" id="authorization" preload="auto">
+   <source src="static/authorization.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>

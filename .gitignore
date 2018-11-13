@@ -1,0 +1,5 @@
+*.pyc
+img1.png
+img2.png
+DevServer_connection.json
+*.card
