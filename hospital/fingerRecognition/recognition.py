@@ -16,12 +16,12 @@ def removedot(invertThin):
     temp1 = temp0/255
     temp2 = numpy.array(temp1)
     temp3 = numpy.array(temp2)
-    
+
     enhanced_img = numpy.array(temp0)
     filter0 = numpy.zeros((10,10))
     W,H = temp0.shape[:2]
     filtersize = 6
-    
+
     for i in range(W - filtersize):
         for j in range(H - filtersize):
             filter0 = temp1[i:i + filtersize,j:j + filtersize]
@@ -74,11 +74,11 @@ def main(img1, img2):
     image_name = img1
     img1 = cv2.imread(image_name, cv2.IMREAD_GRAYSCALE)
     kp1, des1 = get_descriptors(img1)
-    
+
     image_name = img2
     img2 = cv2.imread(image_name, cv2.IMREAD_GRAYSCALE)
     kp2, des2 = get_descriptors(img2)
-    
+
     # Matching between descriptors
     bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
     matches = sorted(bf.match(des1, des2), key= lambda match:match.distance)
@@ -97,7 +97,7 @@ def main(img1, img2):
     score = 0;
     for match in matches:
         score += match.distance
-    score_threshold = 43
+    score_threshold = 50
     print(score/len(matches))
     if int(score/len(matches)) < score_threshold:
         print("Fingerprint matches")
@@ -107,9 +107,9 @@ def main(img1, img2):
         return(False)
 
 
-    
 
-    
+
+
 if __name__ == "__main__":
     try:
         main()

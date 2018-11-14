@@ -12,34 +12,34 @@ function getEnrolmentBox(result) {
   '<span class="card-pf-utilization-card-details-line-1" style="font-size: 16px;">' +
   '</span><br/>' +
 
-  '<span class="card-pf-utilization-card-details-line-2"><b>Full Name:</b><font color ="#FF9933"> ' +result[0].firstName + ' ' + result[0].lastName + '</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Full Name:</b><font color ="#FF0000"> ' +result[0].firstName + ' ' + result[0].lastName + '</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Gender:</b><font color ="#FF9933"> ' + result[0].gender + '</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Gender:</b><font color ="#FF0000"> ' + result[0].gender + '</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Country:</b><font color ="#FF9933"> ' + result[0].country +'</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Country:</b><font color ="#FF0000"> ' + result[0].country +'</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Address:</b><font color ="#FF9933"> ' + result[0].address + '</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Address:</b><font color ="#FF0000"> ' + result[0].address + '</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Date of Birth :</b><font color ="#FF9933"> ' + result[0].dob + '</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Date of Birth :</b><font color ="#FF0000"> ' + result[0].dob + '</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Medical Conditions:</b><font color ="#FF9933"> ' + result[0].medicalCondition + '</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Medical Conditions:</b><font color ="#FF0000"> ' + result[0].medicalCondition + '</font></span>' +
   '</span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Blood Type:</b><font color ="#FF9933"> ' + result[0].bloodType + '</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Blood Type:</b><font color ="#FF0000"> ' + result[0].bloodType + '</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Immunization:</b><font color ="#FF9933"> ' + result[0].immunization + '</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Immunization:</b><font color ="#FF0000"> ' + result[0].immunization + '</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Allergies:</b><font color ="#FF9933"> ' + result[0].allergies + '</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Allergies:</b><font color ="#FF0000"> ' + result[0].allergies + '</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Emergency Contact Name:</b><font color ="#FF9933"> Danial Gunawan</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Emergency Contact Name:</b><font color ="#FF0000"> Daniel Gunawan</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Emergency Contact Number:</b><font color ="#FF9933"> +65 1234 5678</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Emergency Contact Number:</b><font color ="#FF0000"> +65 1234 5678</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Bank Name:</b><font color ="#FF9933"> Singapore State Bank</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Bank Name:</b><font color ="#FF0000"> Singapore State Bank</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Bank Account Number:</b><font color ="#FF9933"> 027-20485-20485</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Bank Account Number:</b><font color ="#FF0000"> 027-20485-20485</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Account Balance:</b><font color ="#FF9933"> 8000</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Account Balance:</b><font color ="#FF0000"> 8000</font></span>' +
   '<br>' +
 
   '<span class="card-pf-utilization-card-details-line-2">' + '</span>' +
@@ -65,25 +65,25 @@ function getHospitalBox(result) {
   '<span class="card-pf-utilization-card-details-line-1" style="font-size: 16px;">' +
   '</span><br/>' +
 
-  '<span class="card-pf-utilization-card-details-line-2"><b>Full Name:</b><font color ="#FF9933"> ' +result[0].firstName +" "+ result[0].lastName + ' </font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Full Name:</b><font color ="#FF0000"> ' +result[0].firstName +" "+ result[0].lastName + ' </font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Country:</b><font color ="#FF9933"> ' + result[0].country +'</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Country:</b><font color ="#FF0000"> ' + result[0].country +'</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Date of Birth :</b><font color ="#FF9933"> ' + result[0].dob + '</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Date of Birth :</b><font color ="#FF0000"> ' + result[0].dob + '</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Medical Conditions:</b><font color ="#FF9933"> ' + result[0].medicalCondition + '</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Medical Conditions:</b><font color ="#FF0000"> ' + result[0].medicalCondition + '</font></span>' +
   '</span>' +
   '<br>' +
-  '<span id="bloodType3" class="card-pf-utilization-card-details-line-2"><b>Blood Type:</b><font color ="#FF9933"> ' + result[0].bloodType + '</font></span>' +
+  '<span id="bloodType3" class="card-pf-utilization-card-details-line-2"><b>Blood Type:</b><font color ="#FF0000"> ' + result[0].bloodType + '</font></span>' +
   '<br>' +
-  '<span id="immunization3" class="card-pf-utilization-card-details-line-2"><b>Immunization:</b><font color ="#FF9933"> ' + result[0].immunization + '</font></span>' +
+  '<span id="immunization3" class="card-pf-utilization-card-details-line-2"><b>Immunization:</b><font color ="#FF0000"> ' + result[0].immunization + '</font></span>' +
   '<br>' +
   '</span>' +
-  '<span id="allergies3" class="card-pf-utilization-card-details-line-2"><b>Allergies:</b><font color ="#FF9933"> ' + result[0].allergies + '</font></span>' +
+  '<span id="allergies3" class="card-pf-utilization-card-details-line-2"><b>Allergies:</b><font color ="#FF0000"> ' + result[0].allergies + '</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Emergency Contact Name:</b><font color ="#FF9933"> Danial Gunawan</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Emergency Contact Name:</b><font color ="#FF0000"> Daniel Gunawan</font></span>' +
   '<br>' +
-  '<span class="card-pf-utilization-card-details-line-2"><b>Emergency Contact Number:</b><font color ="#FF9933"> +65 1234 5678</font></span>' +
+  '<span class="card-pf-utilization-card-details-line-2"><b>Emergency Contact Number:</b><font color ="#FF0000"> +65 1234 5678</font></span>' +
   '<br>' +
   '<span class="card-pf-utilization-card-details-line-2">' + '</span>' +
   '</span>' +
@@ -175,16 +175,16 @@ function getUpdate(){
               '<span class="card-pf-utilization-card-details-line-1" style="font-size: 16px;">' +
               '</span><br/>' +
 
-              '<span class="card-pf-utilization-card-details-line-2"><b>Full Name:</b><font color ="#FF9933"> ' +result[0].firstName +" "+ result[0].lastName  + ' </font></span>' +
+              '<span class="card-pf-utilization-card-details-line-2"><b>Full Name:</b><font color ="#FF0000"> ' +result[0].firstName +" "+ result[0].lastName  + ' </font></span>' +
               '<br>' +
-              '<span class="card-pf-utilization-card-details-line-2"><b>Account No:</b><font color ="#FF9933"> ' +  result[0].accountNo + '</font></span>' +
+              '<span class="card-pf-utilization-card-details-line-2"><b>Account No:</b><font color ="#FF0000"> ' +  result[0].accountNo + '</font></span>' +
               '<br>' +
-              '<span class="card-pf-utilization-card-details-line-2"><b>Account Balance:</b><font color ="#FF9933"> ' + result[0].accountBalance + '</font></span>' +
+              '<span class="card-pf-utilization-card-details-line-2"><b>Account Balance:</b><font color ="#FF0000"> ' + result[0].accountBalance + '</font></span>' +
               '<br>' +
-              '<span class="card-pf-utilization-card-details-line-2"><b>Account Branch:</b><font color ="#FF9933"> ' + result[0].accountBranch + '</font></span>' +
+              '<span class="card-pf-utilization-card-details-line-2"><b>Account Branch:</b><font color ="#FF0000"> ' + result[0].accountBranch + '</font></span>' +
               '<br>' +
               '</span>' +
-              '<span class="card-pf-utilization-card-details-line-2"><b>Account Currency:</b><font color ="#FF9933"> ' + result[0].accountCurrency + '</font></span>' +
+              '<span class="card-pf-utilization-card-details-line-2"><b>Account Currency:</b><font color ="#FF0000"> ' + result[0].accountCurrency + '</font></span>' +
               '</span>' +
               '<span class="card-pf-utilization-card-details-line-2">' + '</span>' +
               '</span>' +
