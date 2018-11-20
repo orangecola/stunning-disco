@@ -37,7 +37,7 @@ def result():
             },
             data = json.dumps({
                 "$class": "org.example.id2020.Person",
-                "personID": PersonIDHash(formData.get("personId")[0]),
+                "personID": PersonIDHash(datetime.now().__str__()),
                 "fingerId": formData.get("fingerId")[0],
                 "firstName": formData.get("fname")[0],
                 "lastName": formData.get("lname")[0],
